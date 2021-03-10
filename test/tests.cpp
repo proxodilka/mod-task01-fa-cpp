@@ -38,3 +38,15 @@ TEST(task3, test6) {
   unsigned int result = faStr3(str);
   EXPECT_EQ(5,result);
 }
+
+TEST(task3, roundTest) {
+  const char * str = "a bc de";
+  unsigned int result = faStr3(str);
+  EXPECT_EQ(2,result);
+}
+
+TEST(task3, divisionByZeroTest) {
+  const char * str = " ";
+  unsigned int result = faStr3(str);
+  EXPECT_EQ(0,result);
+}
